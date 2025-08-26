@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { ModeWatcher } from "mode-watcher"
   import "../app.css"
 
   const { children } = $props()
@@ -8,4 +9,5 @@
   <title>Orbital diffdb - open source database migration tool</title>
 </svelte:head>
 
+<ModeWatcher />
 {@render children?.()}

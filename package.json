@@ -21,6 +21,7 @@
     "@tailwindcss/vite": "catalog:frontend",
     "@xyflow/svelte": "catalog:svelte",
     "bits-ui": "catalog:svelte",
+    "mode-watcher": "catalog:frontend",
     "motion": "catalog:frontend",
     "node-sql-parser": "catalog:libaries",
     "tailwindcss": "catalog:frontend",
