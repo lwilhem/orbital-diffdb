@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { ButtonProps } from "./utils"
-  import { cn } from "$lib/utils"
-  import { buttonVariants } from "./utils"
+  import type { TButtonProps } from "$lib"
+  import { button_variants, cn } from "$lib"
+  import { Button } from "bits-ui"
 
   let {
     class: className,
@@ -13,32 +13,32 @@
     disabled,
     children,
     ...restProps
-  }: ButtonProps = $props()
+  }: TButtonProps = $props()
 
 </script>
 
 {#if href}
-  <a
-    bind:this={ref}
-    data-slot="button"
-    class={cn(buttonVariants({ variant, size }), className)}
+  <Button.Root
+    bind:ref={ref}
+    data-button-root="link"
+    class={cn(button_variants({ variant, size }), className)}
     href={disabled ? undefined : href}
     aria-disabled={disabled}
-    role={disabled ? "link" : undefined}
-    tabindex={disabled ? -1 : undefined}
+    role={disabled ? undefined : "link"}
+    tabindex={disabled ? undefined : -1}
     {...restProps}
   >
     {@render children?.()}
-  </a>
+  </Button.Root>
 {:else}
-  <button
-    bind:this={ref}
-    data-slot="button"
-    class={cn(buttonVariants({ variant, size }), className)}
-    type={type}
-    disabled={disabled}
+  <Button.Root
+    bind:ref={ref}
+    data-button-root="button"
+    class={cn(button_variants({ variant, size }), className)}
+    {type}
+    {disabled}
     {...restProps}
   >
     {@render children?.()}
-  </button>
+  </Button.Root>
 {/if}

@@ -2,6 +2,7 @@
   import { Button } from "$lib"
   import { setMode } from "mode-watcher"
   import { onMount } from "svelte"
+  import MdiArrowCollapseLeft from "virtual:icons/mdi/arrow-collapse-left"
 
   onMount(() => {
     setMode("light")
@@ -9,8 +10,9 @@
 
 </script>
 
-<main class="bg-background">
-  <Button>
-    <span class="text-accent">Hello World !</span>
+<main>
+  <Button href="/">
+    <span>Hello World !</span>
+    <MdiArrowCollapseLeft />
   </Button>
 </main>
