@@ -1,1 +1,9 @@
-export { default as cn, type ObjectValues } from "./cn"
+export {
+  default as cn,
+  getComponentName,
+  type ObjectValues,
+  type WithElementRef,
+  type WithoutChild,
+  type WithoutChildren,
+  type WithoutChildrenOrChild,
+} from "./cn"

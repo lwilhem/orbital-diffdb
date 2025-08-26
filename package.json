@@ -24,6 +24,7 @@
     "mode-watcher": "catalog:frontend",
     "motion": "catalog:frontend",
     "node-sql-parser": "catalog:libaries",
+    "tailwind-variants": "catalog:libaries",
     "tailwindcss": "catalog:frontend",
     "tw-animate-css": "catalog:frontend"
   },
@@ -34,7 +35,6 @@
     "@sveltejs/adapter-auto": "catalog:svelte",
     "@sveltejs/kit": "catalog:svelte",
     "@sveltejs/vite-plugin-svelte": "catalog:svelte",
-    "class-variance-authority": "catalog:libaries",
     "clsx": "catalog:libaries",
     "eslint": "catalog:tools",
     "eslint-plugin-format": "catalog:tools",

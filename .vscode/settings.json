@@ -58,6 +58,7 @@
   "files.associations": {
     "*.css": "tailwindcss"
   },
+  "tailwindCSS.classFunctions": ["cva", "cx"],
   "editor.quickSuggestions": {
     "strings": "on"
   },

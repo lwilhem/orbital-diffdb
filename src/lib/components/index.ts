@@ -1,1 +1,1 @@
-export * from "./LandingPointer"
+export * from "./Button"
