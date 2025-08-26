@@ -1,0 +1,48 @@
+{
+  "name": "@lwilhem/orbital-diffdb",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.0",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "prepare": "svelte-kit sync || echo ''",
+    "dev": "vite dev --port 3000",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "catalog:frontend",
+    "@xyflow/svelte": "catalog:svelte",
+    "bits-ui": "catalog:svelte",
+    "motion": "catalog:frontend",
+    "node-sql-parser": "catalog:libaries",
+    "tailwindcss": "catalog:frontend",
+    "tw-animate-css": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:tools",
+    "@iconify-json/cib": "catalog:icons",
+    "@iconify-json/mdi": "catalog:icons",
+    "@sveltejs/adapter-auto": "catalog:svelte",
+    "@sveltejs/kit": "catalog:svelte",
+    "@sveltejs/vite-plugin-svelte": "catalog:svelte",
+    "class-variance-authority": "catalog:libaries",
+    "clsx": "catalog:libaries",
+    "eslint": "catalog:tools",
+    "eslint-plugin-format": "catalog:tools",
+    "eslint-plugin-svelte": "catalog:tools",
+    "svelte": "catalog:svelte",
+    "svelte-check": "catalog:svelte",
+    "tailwind-merge": "catalog:libaries",
+    "typescript": "catalog:tools",
+    "unplugin-icons": "catalog:icons",
+    "vite": "catalog:tools"
+  }
+}
