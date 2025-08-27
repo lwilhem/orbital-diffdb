@@ -2,14 +2,14 @@ packages: []
 
 catalogs:
   frontend:
-    "@tailwindcss/vite": ^4.1.12
+    '@tailwindcss/vite': ^4.1.12
     mode-watcher: ^1.1.0
     motion: ^12.23.12
     tailwindcss: ^4.1.12
     tw-animate-css: ^1.3.7
   icons:
-    "@iconify-json/cib": ^1.2.3
-    "@iconify-json/mdi": ^1.2.3
+    '@iconify-json/cib': ^1.2.3
+    '@iconify-json/mdi': ^1.2.3
     unplugin-icons: ^22.2.0
   libaries:
     clsx: ^2.1.1
@@ -17,15 +17,15 @@ catalogs:
     tailwind-merge: ^3.3.1
     tailwind-variants: ^3.1.0
   svelte:
-    "@sveltejs/adapter-auto": ^6.1.0
-    "@sveltejs/kit": ^2.36.2
-    "@sveltejs/vite-plugin-svelte": ^6.1.3
-    "@xyflow/svelte": ^1.2.4
+    '@sveltejs/adapter-auto': ^6.1.0
+    '@sveltejs/kit': ^2.36.3
+    '@sveltejs/vite-plugin-svelte': ^6.1.3
+    '@xyflow/svelte': ^1.2.4
     bits-ui: ^2.9.4
-    svelte: ^5.38.3
+    svelte: ^5.38.6
     svelte-check: ^4.3.1
   tools:
-    "@antfu/eslint-config": ^5.2.1
+    '@antfu/eslint-config': ^5.2.1
     eslint: ^9.34.0
     eslint-plugin-format: ^1.0.1
     eslint-plugin-svelte: ^3.11.0
@@ -34,5 +34,5 @@ catalogs:
     vite-plugin-devtools-json: ^1.0.0
 
 onlyBuiltDependencies:
-  - "@tailwindcss/oxide"
+  - '@tailwindcss/oxide'
   - esbuild
