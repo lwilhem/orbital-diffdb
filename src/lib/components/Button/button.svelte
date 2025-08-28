@@ -1,7 +1,7 @@
 <script lang="ts">
-  import type { TButtonProps } from "$lib"
-  import { button_variants, cn } from "$lib"
-  import { Button } from "bits-ui"
+  import type { TButtonProps } from "./module"
+  import { cn } from "$lib"
+  import { button_variants } from "./module"
 
   let {
     class: className,
@@ -18,27 +18,27 @@
 </script>
 
 {#if href}
-  <Button.Root
-    bind:ref={ref}
-    data-button-root="link"
+  <a
+    bind:this={ref}
+    data-slot="button"
     class={cn(button_variants({ variant, size }), className)}
     href={disabled ? undefined : href}
     aria-disabled={disabled}
-    role={disabled ? undefined : "link"}
-    tabindex={disabled ? undefined : -1}
+    role={disabled ? "link" : undefined}
+    tabindex={disabled ? -1 : undefined}
     {...restProps}
   >
     {@render children?.()}
-  </Button.Root>
+  </a>
 {:else}
-  <Button.Root
-    bind:ref={ref}
-    data-button-root="button"
+  <button
+    bind:this={ref}
+    data-slot="button"
     class={cn(button_variants({ variant, size }), className)}
     {type}
     {disabled}
     {...restProps}
   >
     {@render children?.()}
-  </Button.Root>
+  </button>
 {/if}
