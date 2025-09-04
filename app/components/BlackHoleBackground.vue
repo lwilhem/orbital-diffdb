@@ -179,6 +179,7 @@ function setLines() {
         x: disc.x + Math.cos(angle) * disc.w,
         y: disc.y + Math.sin(angle) * disc.h,
       }
+      // @ts-expect-error ignore
       stateRef.value.lines[i].push(p)
     }
   })
@@ -215,6 +216,7 @@ function setLines() {
         ctx.clip(stateRef.value.clip.path!)
       }
       ctx.beginPath()
+      // @ts-expect-error ignore
       ctx.moveTo(p0.x, p0.y)
       ctx.lineTo(p1.x, p1.y)
       ctx.strokeStyle = props.strokeColor
