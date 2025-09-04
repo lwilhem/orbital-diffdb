@@ -1,0 +1,54 @@
+{
+  "name": "@lwilhem/diffdb",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "packageManager": "pnpm@10.15.1",
+  "license": "MIT",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "postinstall": "nuxt prepare",
+    "dev": "nuxt dev --port 3000",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "check": "nuxt typecheck",
+    "build": "nuxt build",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "catalog:frontend",
+    "class-variance-authority": "catalog:build",
+    "clsx": "catalog:build",
+    "motion-v": "catalog:frontend",
+    "reka-ui": "catalog:frontend",
+    "tailwind-merge": "catalog:build",
+    "tailwindcss": "catalog:frontend",
+    "tw-animate-css": "catalog:frontend"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "catalog:dev",
+    "@iconify-json/cib": "catalog:icons",
+    "@iconify-json/lucide": "catalog:icons",
+    "@nuxt/eslint": "catalog:dev",
+    "@nuxt/icon": "catalog:build",
+    "@nuxtjs/color-mode": "catalog:build",
+    "@vueuse/core": "catalog:build",
+    "@vueuse/nuxt": "catalog:build",
+    "eslint": "catalog:dev",
+    "eslint-plugin-format": "catalog:dev",
+    "nuxt": "catalog:build",
+    "typescript": "catalog:dev",
+    "vue": "catalog:frontend",
+    "vue-tsc": "catalog:dev"
+  },
+  "resolutions": {
+    "@nuxt/devtools": "catalog:build",
+    "@nuxt/kit": "catalog:build",
+    "nuxt": "catalog:build",
+    "unplugin": "catalog:build",
+    "vite": "catalog:build"
+  }
+}
