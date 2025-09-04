@@ -18,6 +18,7 @@ export default defineNuxtConfig({
   css: ['~/assets/css/tailwind.css'],
 
   colorMode: {
+    preference: 'light', // default value of $colorMode.preference for development only
     classSuffix: '',
   },
 

@@ -5,7 +5,10 @@ import nuxt from './.nuxt/eslint.config.mjs'
 export default antfu(
   {
     formatters: true,
-    pnpm: true,
+
+    rules: {
+      'no-console': ['warn', { allow: ['warn', 'error', 'info'] }],
+    },
   },
 )
   .append(nuxt())

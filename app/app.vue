@@ -1,5 +1,7 @@
 <template>
+  <DarkModeToggle />
   <UiButton>
-    <span>Hello World</span>
+    <Icon name="cib:500px-5" />
+    <span>Hello World !</span>
   </UiButton>
 </template>
