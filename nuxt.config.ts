@@ -4,10 +4,7 @@ import tailwindcss from '@tailwindcss/vite'
 export default defineNuxtConfig({
   modules: [
     '@vueuse/nuxt',
-    '@nuxt/icon',
-    'reka-ui/nuxt',
     'motion-v/nuxt',
-    '@nuxtjs/color-mode',
     '@nuxt/eslint',
   ],
 
@@ -15,11 +12,7 @@ export default defineNuxtConfig({
     enabled: true,
   },
 
-  css: ['~/assets/css/main.css'],
-
-  colorMode: {
-    classSuffix: '',
-  },
+  css: ['~/assets/css/tailwind.css'],
 
   future: {
     compatibilityVersion: 4,
@@ -42,7 +35,6 @@ export default defineNuxtConfig({
       },
     },
   },
-
   vite: {
     plugins: [
       tailwindcss(),
@@ -56,10 +48,5 @@ export default defineNuxtConfig({
         sortConfigKeys: true,
       },
     },
-  },
-
-  icon: {
-    mode: 'css',
-    cssLayer: 'base',
   },
 })
