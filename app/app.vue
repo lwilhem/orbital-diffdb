@@ -1,3 +1,5 @@
 <template>
-  <span>Hello World !</span>
+  <UiButton>
+    <span>Hello World</span>
+  </UiButton>
 </template>

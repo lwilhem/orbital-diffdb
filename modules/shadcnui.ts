@@ -94,12 +94,3 @@ export default defineNuxtModule<ShadcnModuleOptions>({
     }
   },
 })
-
-declare module '@nuxt/schema' {
-  interface NuxtConfig {
-    shadcn?: ShadcnModuleOptions
-  }
-  interface NuxtOptions {
-    shadcn?: ShadcnModuleOptions
-  }
-}

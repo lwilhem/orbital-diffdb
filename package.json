@@ -35,6 +35,7 @@
     "@iconify-json/lucide": "catalog:icons",
     "@nuxt/eslint": "catalog:dev",
     "@nuxt/icon": "catalog:build",
+    "@nuxtjs/color-mode": "catalog:build",
     "@types/node": "catalog:dev",
     "@vueuse/core": "catalog:build",
     "@vueuse/nuxt": "catalog:build",
