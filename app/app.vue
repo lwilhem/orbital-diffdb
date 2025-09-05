@@ -1,5 +1,5 @@
 <template>
-  <DarkModeToggle />
+  <BlocksDarkModeToggle />
   <UiButton>
     <Icon name="cib:500px-5" />
     <span>Hello World !</span>

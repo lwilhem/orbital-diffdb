@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const colorMode = useColorMode()
+const { setColorMode } = useColorModeSingleton()
 </script>
 
 <template>
@@ -12,13 +12,13 @@ const colorMode = useColorMode()
       </UiButton>
     </UiDropdownMenuTrigger>
     <UiDropdownMenuContent align="end">
-      <UiDropdownMenuItem @click="colorMode.preference = 'light'">
+      <UiDropdownMenuItem @click="setColorMode('light')">
         Light
       </UiDropdownMenuItem>
-      <UiDropdownMenuItem @click="colorMode.preference = 'dark'">
+      <UiDropdownMenuItem @click="setColorMode('dark')">
         Dark
       </UiDropdownMenuItem>
-      <UiDropdownMenuItem @click="colorMode.preference = 'system'">
+      <UiDropdownMenuItem @click="setColorMode('system')">
         System
       </UiDropdownMenuItem>
     </UiDropdownMenuContent>
